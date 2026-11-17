@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import meowSound from "./assets/meow.mp3";
 import playImg from "./assets/play.png";
 import resetImg from "./assets/reset.png";
 import workBtnClicked from "./assets/work-clicked.png";
@@ -14,8 +15,6 @@ import breakGif from "./assets/break.gif";
 import closeBtn from "./assets/close.png";
 
 function App() {
-
-  const meowSound = "/assets/meow.mp3";
 
   const [timeLeft, setTimeLeft] = useState(25*60);
   const [isRunning, setIsRunning] = useState(false);
